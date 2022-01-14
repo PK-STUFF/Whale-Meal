@@ -1,0 +1,3 @@
+mealpy
+numpy
+python-dotenv
