@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+from time import time
 from mealpy.swarm_based.WOA import BaseWOA as WOA
 from dotenv import dotenv_values
 
@@ -22,4 +23,11 @@ if __name__ == "__main__":
 	}
 
 	model = WOA(problem=problem, epoch=epoch, pop_size=pop_size)
+
+	start_time = time()
+
 	model.solve()
+
+	end_time = time()
+
+	print(f"Czas wykonania: {end_time-start_time}")
