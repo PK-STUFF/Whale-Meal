@@ -18,7 +18,7 @@ if __name__ == "__main__":
 		"obj_func": drop_wave,
 		"lb": [a, a],
 		"ub": [b, b],
-		"minmax": "min",
+		"minmax": "max",
 		"verbose": True,
 	}
 
